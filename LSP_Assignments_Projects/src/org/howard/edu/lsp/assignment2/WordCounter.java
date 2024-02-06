@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class WordCounter {
     public static void main(String[] args) {
-        String filePath = "./word.txt";
+        String filePath = "/Users/bpwoolfolk/git/org/howard/edu/assignment1/word.txt";
         countWords(filePath);
     }
     
