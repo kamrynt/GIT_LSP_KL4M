@@ -23,6 +23,7 @@ public class IntegerSet {
      * Custom exception class for IntegerSet-specific errors.
      * By defining this inside IntegerSet, we're making it clear that this exception is specific to our set operations.
      */
+    @SuppressWarnings("serial")
     public class IntegerSetException extends Exception {
         public IntegerSetException(String error) {
             super(error);

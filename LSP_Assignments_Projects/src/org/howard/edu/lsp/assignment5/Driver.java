@@ -1,22 +1,13 @@
-package org.howard.edu.hw5;
+package org.howard.edu.lsp.assignment5;
 
-import org.howard.edu.hw5.IntegerSet.IntegerSetException;
+import org.howard.edu.lsp.assignment5.IntegerSet.IntegerSetException;
 
-/**
- * A driver class to demonstrate the functionality of the IntegerSet class.
- * Like a director behind the scenes, this class orchestrates a series of operations,
- * showcasing the versatility and elegance of our set implementation.
- * Each print statement is an invitation to witness the magic unfold.
- * 
- * Authored with care by Justin, now narrated with a blend of technical precision and poetic license.
- */
 public class Driver {
     public static void main(String[] args) {
         try { 
             IntegerSet set1 = new IntegerSet();
             for (int i = 1; i <= 10; i++) {
-                set1.add(i);  // Building our first set, like laying down the bricks of a castle.
-            }
+                set1.add(i);  // Building our first set
             
             // Displaying the set, its smallest, and largest elements—our first glimpse into its treasures.
             System.out.println("Value of Set 1 is: " + set1 + "\n");
@@ -47,12 +38,12 @@ public class Driver {
             
             // Resetting the set, a fresh canvas for the next masterpiece.
             set1.clear();
-            for (int i = 1; i <= 10; i++) {
-                set1.add(i);
+            for (int x= 1; x<= 10; x++) {
+                set1.add(x);
             }
             IntegerSet set2 = new IntegerSet();
-            for (int i = 0; i <= 20; i += 2) {
-                set2.add(i);  // Constructing another set, this one with a rhythm of its own.
+            for (int y = 0; y <= 20; y += 2) {
+                set2.add(y);  // Constructing another set, this one with a rhythm of its own.
             }
             System.out.println("Value of Set 1 is: " + set1);
             System.out.println("Value of Set 2 is: " + set2);
@@ -65,24 +56,24 @@ public class Driver {
             
             // Resetting sets to explore the difference, like telling two sides of the same story.
             set1.clear();
-            for (int i = 1; i <= 10; i++) {
-                set1.add(i);
+            for (int z = 1; z <= 10; z++) {
+                set1.add(z);
             }
             set2.clear();
-            for (int i = 0; i <= 20; i += 2) {
-                set2.add(i);
+            for (int k = 0; k <= 20; k += 2) {
+                set2.add(k);
             }
             
             System.out.println("Difference of Set 1 and Set 2");
             set1.diff(set2); 
             System.out.println(set1 + "\n"); 
             set1.clear();
-            for (int i = 1; i <= 10; i++) {
-                set1.add(i);
+            for (int r = 1; r <= 10; r++) {
+                set1.add(r);
             }
             set2.clear();
-            for (int i = 0; i <= 20; i += 2) {
-                set2.add(i);
+            for (int j = 0; j <= 20; j += 2) {
+                set2.add(j);
             }
             
             System.out.println("Difference of Set 2 and Set 1");
@@ -106,8 +97,11 @@ public class Driver {
             } catch (IntegerSetException e) {
                 System.out.println("Caught an exception: " + e.getMessage());
             }
-        } catch (Exception e) {
+         catch (Exception e) {
             System.out.println("An unexpected error occurred: " + e.getMessage());
         }
+            }
+            
+        }
     }
-}
+
