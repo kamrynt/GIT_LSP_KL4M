@@ -3,8 +3,7 @@ package org.howard.edu.lsp.assignment5;
 import java.util.*;
 
 /**
- * Represents a set of unique integers, illustrating basic set operations like union, intersection, and difference.
- * Designed with the mindset of making data structures approachable and intuitive.
+ * 
  */
 public class IntegerSet {
 
@@ -13,7 +12,7 @@ public class IntegerSet {
 
     /**
      * Constructor initializes the list to hold the unique integers.
-     * We're starting with an ArrayList because it's simple and familiar, but let's remember, a true set doesn't allow duplicates!
+     *starting with an ArrayList because it's simple and familiar
      */
     public IntegerSet() {
         integerSet = new ArrayList<>();
@@ -21,7 +20,7 @@ public class IntegerSet {
 
     /**
      * Custom exception class for IntegerSet-specific errors.
-     * By defining this inside IntegerSet, we're making it clear that this exception is specific to our set operations.
+     * By defining this inside IntegerSet
      */
     @SuppressWarnings("serial")
     public class IntegerSetException extends Exception {
