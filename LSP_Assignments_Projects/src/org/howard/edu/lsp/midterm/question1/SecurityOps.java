@@ -16,6 +16,8 @@ public class SecurityOps {
             } else {
                 oddIndexChars.append(cleanedText.charAt(i));
             }
+            //test to push again
+            
         }
 
         // Combine even and odd indexed characters.
